@@ -57,5 +57,10 @@ Run cd /usr/local/src && \
 	cd containerd && \
 	gtags --gtagslabel=pygments -v
 
+Run cd /usr/local/src && \
+	git clone https://github.com/opencontainers/runc.git && \
+	cd runc && \
+	gtags --gtagslabel=pygments -v
+
 EXPOSE 80
 CMD ["supervisord", "-n"]
