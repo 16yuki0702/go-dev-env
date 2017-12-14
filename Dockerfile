@@ -52,5 +52,10 @@ RUN cd /usr/local/src && \
 	cd moby && \
 	gtags --gtagslabel=pygments -v
 
+Run cd /usr/local/src && \
+	git clone https://github.com/containerd/containerd.git && \
+	cd containerd && \
+	gtags --gtagslabel=pygments -v
+
 EXPOSE 80
 CMD ["supervisord", "-n"]
